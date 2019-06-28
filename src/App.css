@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.stack  * + * {
+  margin-top: 1.5rem;
+}
+[class^='stack'] > * {
+  margin: 0;
+}
+
+.stack--small > * + * {
+  margin-top: 1.5rem;
+}
+
+.stack--large > * + * {
+  margin-top: 3rem;
+}
 .App {
   text-align: center;
 }
@@ -10,7 +27,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +47,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+input {
+  min-width: 30vw;
+  border: 1px solid black;
+}
+
+label {
+  display: block;
+  width: auto; 
+
+}
+.main{
+  margin-bottom: 20vh
 }
